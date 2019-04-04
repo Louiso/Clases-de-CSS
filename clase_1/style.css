@@ -1,0 +1,77 @@
+:root{
+  --height-bar-status: 24px;
+  --height-footer-status: 48px;
+}
+.container{
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celular{
+  width: 360px;
+  background-color: white;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar_status{
+  height: var(--height-bar-status);
+  background-color: black;
+}
+
+.footer_status{
+  height: var(--height-footer-status);
+  background-color: black;
+}
+
+.chat{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: calc(100% - var(--height-bar-status) - var(--height-footer-status));
+}
+.burbujas{
+  /* background-color: green; */
+  height: 56px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.burbuja-container{
+  position: relative;
+  margin-right: 16px;
+}
+.burbuja-container:last-child{
+  margin-right: 8px;
+}
+.burbuja{
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.notificacion{
+  position: absolute;
+  right: -8px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  height: calc(100% - 80px);
+  background-color: white;
+}
